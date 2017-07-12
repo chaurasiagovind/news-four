@@ -1,0 +1,20 @@
+<div  class="articles" *ngIf="news" >
+<md-card *ngFor="let article of news.articles" >
+  <md-card-header>
+    <div md-card-avatar class="example-header-image"></div>
+    <md-card-title>{{article.title}}</md-card-title>
+    <md-card-subtitle>{{article.publishedAt}}</md-card-subtitle>
+  </md-card-header>
+  <img md-card-image [src]="article.urlToImage">
+  <md-card-content>
+    <p>
+     {{article.description}}
+     <a href="">Read full article</a>
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button>LIKE</button>
+    <button md-button>SHARE</button>
+  </md-card-actions>
+</md-card>
+</div>

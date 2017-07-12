@@ -1,0 +1,9 @@
+<md-input-container class="right">
+  <input mdInput placeholder="Search Channel" [(ngModel)]="term">
+  <md-icon *ngIf="term" mdSuffix> <i class="material-icons">cancel</i></md-icon>
+</md-input-container>
+<md-grid-list *ngIf="sources" cols="3" rowHeight="150px">
+  <md-grid-tile *ngFor="let source of sources.sources |filter:term" [routerLink]="['/detail', source.id]">
+    	 <img class="source-icon" title="{{source.name}}" alt="{{source.name}}" [src]="'https://icons.better-idea.org/icon?url='+source.url+'&size=70..120..200'">
+  </md-grid-tile>
+</md-grid-list>
