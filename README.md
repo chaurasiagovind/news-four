@@ -1,13 +1,15 @@
+
+
+# NgFour
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+
 ## Before setup
 
 Generate your API Key here https://newsapi.org/
 Add you key in src/app/news/news.service.ts
 
 
-
-# NgFour
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
 ## Development server
 
